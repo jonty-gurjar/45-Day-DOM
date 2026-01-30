@@ -11,10 +11,6 @@ body{
   width: 100%;
 }
 
-body {
-  overflow: hidden;
-}
-
 main{
   height: 100%;
   width: 100%;
@@ -24,65 +20,49 @@ main{
   justify-content: center;
 }
 
-.card{
-  background-color: white;
-  width: 450px;
-  border: none;
-  border-radius: 10px;
-  padding: 30px;
-
+.card {
+  width: 400px;
+  background-color: brown;
+  padding: 20px;
+  border-radius: 15px;
+  position: absolute;
 }
 
-.card p{
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-family: monospace;
-}
-
-.card p span {
-  color: royalblue;
-  font-weight: 600;
-}
-
-.outer {
-  height: 20px;
-  width: 100%;
-  background-color: grey;
-  border-radius: 50px;
-}
-
-.inner{
-  height: 100%;
-  width: 0%;
-  background-color: green;
-  border-radius: 50px;
-}
-
-.button {
-  margin-top: 20px;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-
-}
-
-.button button{ 
-  padding: 12px 25px;
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  font-weight: 600;
-  font-size: 18px;
+.card div {
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
-
 }
 
-.button h2 {
-  font-size: 60px;
-  font-family: monospace;
+.card img{
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
+
+.card h1{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+
+.card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 90px;
+  opacity: 0;
+  background-image: url(https://img.freepik.com/free-vector/instagram-background-gradient-colors_23-2147819865.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+  transition: all cubic-bezier(.75,.99,.77,1.44) 0.4s;
+}
+
 
 
